@@ -1,0 +1,31 @@
+#contact {
+    &-a {
+        .form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+
+            .input {
+                padding: .5rem 1rem;
+            }
+
+            .message {
+                grid-column: 1 / span 2;
+                height: 150px;
+            }
+
+            button {
+                grid-column: 1 / span 2;
+            }
+        }
+    }
+
+    &-b {
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            color: #fff;
+        }
+    }
+}
